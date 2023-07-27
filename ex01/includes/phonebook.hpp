@@ -6,7 +6,7 @@
 /*   By: nwyseur <nwyseur@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 14:14:08 by nwyseur           #+#    #+#             */
-/*   Updated: 2023/07/27 16:36:16 by nwyseur          ###   ########.fr       */
+/*   Updated: 2023/07/27 17:10:19 by nwyseur          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <iostream>
 # include <string>
+# include <iomanip>
 # include "contact.hpp"
 
 class phonebook

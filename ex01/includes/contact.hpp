@@ -6,7 +6,7 @@
 /*   By: nwyseur <nwyseur@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 13:48:47 by nwyseur           #+#    #+#             */
-/*   Updated: 2023/07/27 14:40:44 by nwyseur          ###   ########.fr       */
+/*   Updated: 2023/07/27 17:28:03 by nwyseur          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,9 @@ class contact
 			std::string	ft_get_nickname(void);
 			std::string	ft_get_phonenumber(void);
 			std::string	ft_get_secret(void);
+
+			void	ft_display_short(void);
+			// void	ft_display_long(void);
 
 	private :
 

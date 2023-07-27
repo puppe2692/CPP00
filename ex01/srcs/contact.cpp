@@ -6,7 +6,7 @@
 /*   By: nwyseur <nwyseur@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 14:32:19 by nwyseur           #+#    #+#             */
-/*   Updated: 2023/07/27 14:58:50 by nwyseur          ###   ########.fr       */
+/*   Updated: 2023/07/27 17:27:54 by nwyseur          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,3 +79,28 @@ std::string		contact::ft_get_secret(void)
 {
 	return (this->_secret);
 }
+
+void	contact::ft_display_short(void)
+{
+	if (this->_firstName.length() > 10)
+		std::cout << std::setw(10) << std::setfill (' ') << std::right << this->_firstName.substr(0,9) + "." << "|";
+	else
+		std::cout << std::setw(10) << std::setfill (' ') << std::right << this->_firstName << "|";
+	if (this->_lastName.length() > 10)
+		std::cout << std::setw(10) << std::setfill (' ') << std::right << this->_lastName.substr(0,9) + "." << "|";
+	else
+		std::cout << std::setw(10) << std::setfill (' ') << std::right << this->_lastName << "|";
+	if (this->_nickName.length() > 10)
+		std::cout << std::setw(10) << std::setfill (' ') << std::right << this->_nickName.substr(0,9) + "." << "|";
+	else
+		std::cout << std::setw(10) << std::setfill (' ') << std::right << this->_nickName << std::endl;
+}
+
+/*void	contact::ft_display_long(void)
+{
+	std::cout << "First Name : " << this->_firstName << std::endl;
+	std::cout << "Last Name : " << this->_firstName << std::endl;
+	std::cout << "Nickname : " << this->_firstName << std::endl;
+	std::cout << "Phone Number : " << this->_firstName << std::endl;
+	std::cout << "Secret : " << this->_firstName << std::endl;
+} */

@@ -6,7 +6,7 @@
 /*   By: nwyseur <nwyseur@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 18:55:57 by nwyseur           #+#    #+#             */
-/*   Updated: 2023/07/27 16:29:57 by nwyseur          ###   ########.fr       */
+/*   Updated: 2023/07/27 17:32:17 by nwyseur          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,33 @@ void	phonebook::ft_add_contact(std::string firstName, std::string lastName,
 
 void	phonebook::ft_show_contact(int index)
 {
-	
+	std::cout << "First Name : " << this->phonebook::carnet[phonebook::_nbContact].ft_get_firstname() << std::endl;
+	std::cout << "Last Name : " << this->phonebook::carnet[phonebook::_nbContact].ft_get_lastname() << std::endl;
+	std::cout << "Nickame : " << this->phonebook::carnet[phonebook::_nbContact].ft_get_nickname() << std::endl;
+	std::cout << "Phonenumber : " << this->phonebook::carnet[phonebook::_nbContact].ft_get_phonenumber() << std::endl;
+	std::cout << "Secret : " << this->phonebook::carnet[phonebook::_nbContact].ft_get_secret() << std::endl;
+}
+
+void	phonebook::ft_show_list(void)
+{
+	int	i;
+
+	i = 0;
+	std::cout << "INDEX     |FIRST NAME|LAST NAME |NICKNAME  " << std::endl;
+	while (i < 8)
+	{
+		std::cout << std::setw(10) << std::setfill (' ') << std::right << i << "|";
+		this->phonebook::carnet[i].ft_display_short();
+		i++;
+	}
+}
+
+int		phonebook::ft_totalcontact(void)
+{
+	return (this->phonebook::_totalContact);
+}
+
+int		phonebook::ft_nbconctact(void)
+{
+	return (this->phonebook::_nbContact);
 }
