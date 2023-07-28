@@ -6,7 +6,7 @@
 /*   By: nwyseur <nwyseur@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 14:32:19 by nwyseur           #+#    #+#             */
-/*   Updated: 2023/07/27 17:27:54 by nwyseur          ###   ########.fr       */
+/*   Updated: 2023/07/28 15:11:13 by nwyseur          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void	contact::ft_set_secret(std::string secret)
 
 std::string		contact::ft_get_firstname(void)
 {
-	return (this->_firstName); // pourquoi oblige de mettre this ici?
+	return (this->_firstName);
 }
 
 std::string		contact::ft_get_lastname(void)
@@ -91,7 +91,7 @@ void	contact::ft_display_short(void)
 	else
 		std::cout << std::setw(10) << std::setfill (' ') << std::right << this->_lastName << "|";
 	if (this->_nickName.length() > 10)
-		std::cout << std::setw(10) << std::setfill (' ') << std::right << this->_nickName.substr(0,9) + "." << "|";
+		std::cout << std::setw(10) << std::setfill (' ') << std::right << this->_nickName.substr(0,9) + "." << std::endl;
 	else
 		std::cout << std::setw(10) << std::setfill (' ') << std::right << this->_nickName << std::endl;
 }
