@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   contact.hpp                                        :+:      :+:    :+:   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nwyseur <nwyseur@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 13:48:47 by nwyseur           #+#    #+#             */
-/*   Updated: 2023/07/27 17:28:03 by nwyseur          ###   ########.fr       */
+/*   Updated: 2023/08/15 15:23:58 by nwyseur          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@
 # include <string>
 # include <iostream>
 
-class contact
+class Contact
 {
 	public :
 
-			contact(void);
-			~contact(void);
+			Contact(void);
+			~Contact(void);
 
 			void	ft_set_firstname(std::string firstName);
 			void	ft_set_lastname(std::string lastName);
@@ -36,7 +36,6 @@ class contact
 			std::string	ft_get_secret(void);
 
 			void	ft_display_short(void);
-			// void	ft_display_long(void);
 
 	private :
 

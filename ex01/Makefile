@@ -6,14 +6,14 @@
 #    By: nwyseur <nwyseur@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/28 21:18:35 by nwyseur           #+#    #+#              #
-#    Updated: 2023/07/28 15:00:42 by nwyseur          ###   ########.fr        #
+#    Updated: 2023/08/16 09:17:03 by nwyseur          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		:= phonebook
+NAME		:= PhoneBook
 
-SRCS_FILES	:= phonebook.cpp \
-				contact.cpp \
+SRCS_FILES	:= PhoneBook.cpp \
+				Contact.cpp \
 				main.cpp \
 
 HEADER_FILE	:= contact.hpp \

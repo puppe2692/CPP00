@@ -6,11 +6,11 @@
 /*   By: nwyseur <nwyseur@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 17:37:31 by nwyseur           #+#    #+#             */
-/*   Updated: 2023/07/28 15:03:55 by nwyseur          ###   ########.fr       */
+/*   Updated: 2023/08/15 15:21:20 by nwyseur          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/phonebook.hpp"
+#include "../includes/PhoneBook.hpp"
 
 int	ft_atoi(std::string str)
 {
@@ -54,7 +54,7 @@ std::string	ft_get_new_contact(std::string variable)
 
 int	main(void)
 {
-	phonebook	phonebook;
+	PhoneBook	phonebook;
 	std::string	input;
 	std::string	newuser[5];
 	int			id;
